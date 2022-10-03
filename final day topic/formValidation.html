@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Form Validation</title>
+
+    <style>
+
+        *
+        {
+            box-sizing: border-box;
+        }
+        form
+        {
+            border: 5px solid blue;
+            height: auto;
+            width: 500px;
+            padding: 30px;
+            margin: 100px auto;
+
+        }
+
+        form input,form div
+        {
+            width: 100%;
+        }
+
+        form input
+        {
+            padding: 15px;
+        }
+
+        form div
+        {
+            border: 2px solid red;
+            background-color: rgba(255, 0, 0, 0.418);
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+        
+        #user{
+            border: 3px solid red;
+            margin-bottom:5px;
+        }
+
+        #PASSWORD{
+            border:3px solid red;
+        }
+
+        form input[type=submit]
+        {
+            background-color: rgb(44, 160, 236);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <form action="./gitusers.html" onsubmit="return validator()">
+        <input class="o"  id="user" type="text" placeholder="Username">
+        <input  class="a" id ="PASSWORD" TYPE="password" placeholder="password" maxlength="20" minlength="8" required> 
+                <div id="msg" style="display: none;">
+
+        </div>
+        <input type="submit">
+    </form>
+    <script src="./formValidation.js"></script>
+</body>
+</html>
